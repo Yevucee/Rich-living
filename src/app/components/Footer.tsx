@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { BrandLogo } from "./BrandLogo";
 
 export default function Footer() {
   return (
@@ -7,11 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gold rounded-sm flex items-center justify-center">
-                <span className="text-navy font-heading text-xl font-semibold">RL</span>
-              </div>
-              <span className="font-heading text-2xl">Rich Living</span>
+            <div className="mb-4 inline-block rounded-md bg-off-white p-3 shadow-sm">
+              <BrandLogo variant="footer" />
             </div>
             <p className="text-stone text-sm leading-relaxed max-w-md">
               Your trusted partner for premium properties and lifestyle services in Accra, Ghana.

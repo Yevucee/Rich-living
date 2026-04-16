@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router";
 import { useState } from "react";
+import { BrandLogo } from "./BrandLogo";
 
 export default function Navigation() {
   const location = useLocation();
@@ -22,11 +23,12 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-off-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-navy rounded-sm flex items-center justify-center">
-              <span className="text-gold font-heading text-xl font-semibold">RL</span>
-            </div>
-            <span className="font-heading text-2xl text-navy">Rich Living</span>
+          <Link
+            to="/"
+            className="flex items-center shrink-0 min-w-0 py-1"
+            aria-label="Rich Living Realty — Home"
+          >
+            <BrandLogo variant="nav" />
           </Link>
 
           {/* Desktop Navigation */}
